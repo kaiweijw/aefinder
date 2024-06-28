@@ -44,7 +44,7 @@
   </ItemGroup>
 
     <ItemGroup>
-        <AssetsSourceFiles Include="../../templates/AeFinderAppTemplate/*"/>
+        <AssetsSourceFiles Include="../../templates/AeFinderAppTemplate/**"/>
     </ItemGroup>
     
 
