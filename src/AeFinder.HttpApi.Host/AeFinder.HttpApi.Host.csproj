@@ -43,8 +43,13 @@
     </Content>
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="DevTemplate\" />
-  </ItemGroup>
+    <ItemGroup>
+        <AssetsSourceFiles Include="../../templates/AeFinderAppTemplate/*"/>
+    </ItemGroup>
+    
+
+    <Target Name="CopyCustomContentOnPublish" AfterTargets="Publish">
+        <Copy SourceFiles="@(AssetsSourceFiles)" DestinationFolder="$(PublishDir)/DevTemplate/"/>
+    </Target>
 
 </Project>
