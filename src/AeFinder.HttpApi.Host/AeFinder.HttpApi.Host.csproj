@@ -44,12 +44,7 @@
   </ItemGroup>
 
     <ItemGroup>
-        <AssetsSourceFiles Include="../../templates/AeFinderAppTemplate/**"/>
+        <Content Include="../../templates/AeFinderAppTemplate/**" CopyToPublishDirectory="PreserveNewest" Link="DevTemplate/%(RecursiveDir)/%(Filename)%(Extension)">
     </ItemGroup>
-    
-
-    <Target Name="CopyCustomContentOnPublish" AfterTargets="Publish">
-        <Copy SourceFiles="@(AssetsSourceFiles)" DestinationFolder="$(PublishDir)/DevTemplate/"/>
-    </Target>
 
 </Project>
