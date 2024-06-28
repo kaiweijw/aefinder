@@ -44,7 +44,7 @@
   </ItemGroup>
 
     <ItemGroup>
-        <Content Include="../../templates/AeFinderAppTemplate/**" CopyToPublishDirectory="PreserveNewest" Link="DevTemplate/%(RecursiveDir)/%(Filename)%(Extension)" />
+        <Content Include="../../templates/AeFinderAppTemplate/src/**" CopyToPublishDirectory="PreserveNewest" Link="DevTemplate/template/src/%(RecursiveDir)/%(Filename)%(Extension)" />
     </ItemGroup>
 
 </Project>
